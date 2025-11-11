@@ -1,8 +1,7 @@
 def fibonacci(n):
-    """
-    Calculates the nth Fibonacci number.
-    """
-    if n <= 0:
+    if n < 0:
+        raise ValueError("Input must be a non-negative integer")
+    elif n == 0:
         return 0
     elif n == 1:
         return 1
